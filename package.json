@@ -6,7 +6,6 @@
     "keystone": "^0.3.19",
     "async": "^1.5.0",
     "lodash": "^4.13.1",
-    "browserify": "^13.1.0",
     "dotenv": "^2.0.0"
   },
   "devDependencies": {
@@ -20,6 +19,6 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "start": "node keystone.js"
+    "start": "mongod --dbpath=./data  && node keystone.js"
   }
 }
