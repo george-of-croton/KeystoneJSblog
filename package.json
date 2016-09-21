@@ -19,6 +19,6 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "start": "mongod --dbpath=./data  && node keystone.js"
+    "start": "node keystone.js"
   }
 }
