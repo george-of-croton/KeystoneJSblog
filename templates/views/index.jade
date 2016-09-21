@@ -2,22 +2,17 @@ extends ../layouts/default
 
 block content
 	.container: .jumbotron
-		img(src='/images/logo.svg', width='160')
-		h1 Welcome
-		p This is your new <a href='http://keystonejs.com' target='_blank'>KeystoneJS</a> website.
-		p It includes the latest versions of
-			| <a href='http://getbootstrap.com/' target='_blank'>Bootstrap</a>
-			| and <a href='http://www.jquery.com/' target='_blank'>jQuery</a>.
-		p Visit the <a href='http://keystonejs.com/guide' target='_blank'>Getting Started</a> guide to learn how to customise it.
-		hr
-		if user && user.canAccessKeystone
-			p
-				a(href='/keystone').btn.btn-lg.btn-primary Open the Admin UI
-		else
-			p We have created a default Admin user for you with the email <strong>armstronggeorge10@gmail.com</strong> and the password <strong>pinarello</strong>.
-			p
-				a(href='/keystone/signin', style='margin-right: 10px').btn.btn-lg.btn-primary Sign in
-				|  to use the Admin UI.
-		hr
-		p Remember to <a href='https://github.com/keystonejs/keystone' target='_blank'>Star KeystoneJS on GitHub</a> and
-			| <a href='https://twitter.com/keystonejs' target='_blank'>follow @keystonejs</a> on twitter for updates.
+		
+		h1 Welcome to Hoam Skool,
+		br
+
+		div.row
+			div.col-xs-6
+				img.img-responsive.img-circle(src='/images/profilepic.jpg')
+			div.col-xs-6
+				p I'm George Armstrong, A writer/ web developer from Wellington, New Zealand currently residing in Melbourne, Australia.
+				br
+				p Currently writing my first novel, a comedy about ill fated video game developer, Eric Armisen. The novel follows Eric as he deals with the apparent suicide of his brief lover and colleague Tilda while concealing the affair from the company's elusive CEO who tasks Eric with investigating the deeper causes of Tilda's death.
+				br
+				p I plan to release the novel in chapters on my blog. The first chapter is due to be published at the end of October 2016.
+				
