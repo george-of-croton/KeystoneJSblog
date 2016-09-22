@@ -25,7 +25,7 @@ MongoClient.connect(url, function(err, db) {
 keystone.init({
 	'name': 'My Site',
 	'brand': 'My Site',
-
+	
 	'less': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
